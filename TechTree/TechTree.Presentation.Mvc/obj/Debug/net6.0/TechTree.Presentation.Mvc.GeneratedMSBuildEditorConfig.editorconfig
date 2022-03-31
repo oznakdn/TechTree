@@ -15,6 +15,14 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\USER\Desktop\Kurslar\Youtube\TechTree\TechTree\TechTree.Presentation.Mvc
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/USER/Desktop/Kurslar/Youtube/TechTree/TechTree/TechTree.Presentation.Mvc/Areas/Admin/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/USER/Desktop/Kurslar/Youtube/TechTree/TechTree/TechTree.Presentation.Mvc/Areas/Admin/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/USER/Desktop/Kurslar/Youtube/TechTree/TechTree/TechTree.Presentation.Mvc/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -25,6 +33,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/USER/Desktop/Kurslar/Youtube/TechTree/TechTree/TechTree.Presentation.Mvc/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/USER/Desktop/Kurslar/Youtube/TechTree/TechTree/TechTree.Presentation.Mvc/Views/Shared/_AdminMenuPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9BZG1pbk1lbnVQYXJ0aWFsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/USER/Desktop/Kurslar/Youtube/TechTree/TechTree/TechTree.Presentation.Mvc/Views/Shared/_ValidationScriptsPartial.cshtml]
@@ -38,6 +50,10 @@ build_metadata.AdditionalFiles.CssScope =
 [C:/Users/USER/Desktop/Kurslar/Youtube/TechTree/TechTree/TechTree.Presentation.Mvc/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/USER/Desktop/Kurslar/Youtube/TechTree/TechTree/TechTree.Presentation.Mvc/Areas/Admin/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-tcg9sh9ygk
 
 [C:/Users/USER/Desktop/Kurslar/Youtube/TechTree/TechTree/TechTree.Presentation.Mvc/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s

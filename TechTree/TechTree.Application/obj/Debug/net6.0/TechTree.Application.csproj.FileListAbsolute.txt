@@ -7,8 +7,6 @@ C:\Users\USER\Desktop\Kurslar\Youtube\TechTree\TechTree\TechTree.Application\bin
 C:\Users\USER\Desktop\Kurslar\Youtube\TechTree\TechTree\TechTree.Application\bin\Debug\net6.0\TechTree.Application.dll
 C:\Users\USER\Desktop\Kurslar\Youtube\TechTree\TechTree\TechTree.Application\bin\Debug\net6.0\TechTree.Application.pdb
 C:\Users\USER\Desktop\Kurslar\Youtube\TechTree\TechTree\TechTree.Application\bin\Debug\net6.0\TechTree.Domain.dll
-C:\Users\USER\Desktop\Kurslar\Youtube\TechTree\TechTree\TechTree.Application\bin\Debug\net6.0\TechTree.Persistence.dll
-C:\Users\USER\Desktop\Kurslar\Youtube\TechTree\TechTree\TechTree.Application\bin\Debug\net6.0\TechTree.Persistence.pdb
 C:\Users\USER\Desktop\Kurslar\Youtube\TechTree\TechTree\TechTree.Application\bin\Debug\net6.0\TechTree.Domain.pdb
 C:\Users\USER\Desktop\Kurslar\Youtube\TechTree\TechTree\TechTree.Application\obj\Debug\net6.0\TechTree.Application.csproj.CopyComplete
 C:\Users\USER\Desktop\Kurslar\Youtube\TechTree\TechTree\TechTree.Application\obj\Debug\net6.0\TechTree.Application.dll

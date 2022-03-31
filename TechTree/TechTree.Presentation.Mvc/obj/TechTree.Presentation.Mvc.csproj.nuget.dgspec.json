@@ -28,8 +28,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\USER\\Desktop\\Kurslar\\Youtube\\TechTree\\TechTree\\TechTree.Persistence\\TechTree.Persistence.csproj": {
-                "projectPath": "C:\\Users\\USER\\Desktop\\Kurslar\\Youtube\\TechTree\\TechTree\\TechTree.Persistence\\TechTree.Persistence.csproj"
+              "C:\\Users\\USER\\Desktop\\Kurslar\\Youtube\\TechTree\\TechTree\\TechTree.Domain\\TechTree.Domain.csproj": {
+                "projectPath": "C:\\Users\\USER\\Desktop\\Kurslar\\Youtube\\TechTree\\TechTree\\TechTree.Domain\\TechTree.Domain.csproj"
               }
             }
           }
@@ -146,8 +146,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\USER\\Desktop\\Kurslar\\Youtube\\TechTree\\TechTree\\TechTree.Domain\\TechTree.Domain.csproj": {
-                "projectPath": "C:\\Users\\USER\\Desktop\\Kurslar\\Youtube\\TechTree\\TechTree\\TechTree.Domain\\TechTree.Domain.csproj"
+              "C:\\Users\\USER\\Desktop\\Kurslar\\Youtube\\TechTree\\TechTree\\TechTree.Application\\TechTree.Application.csproj": {
+                "projectPath": "C:\\Users\\USER\\Desktop\\Kurslar\\Youtube\\TechTree\\TechTree\\TechTree.Application\\TechTree.Application.csproj"
               }
             }
           }
@@ -224,6 +224,9 @@
             "projectReferences": {
               "C:\\Users\\USER\\Desktop\\Kurslar\\Youtube\\TechTree\\TechTree\\TechTree.Application\\TechTree.Application.csproj": {
                 "projectPath": "C:\\Users\\USER\\Desktop\\Kurslar\\Youtube\\TechTree\\TechTree\\TechTree.Application\\TechTree.Application.csproj"
+              },
+              "C:\\Users\\USER\\Desktop\\Kurslar\\Youtube\\TechTree\\TechTree\\TechTree.Persistence\\TechTree.Persistence.csproj": {
+                "projectPath": "C:\\Users\\USER\\Desktop\\Kurslar\\Youtube\\TechTree\\TechTree\\TechTree.Persistence\\TechTree.Persistence.csproj"
               }
             }
           }
@@ -244,11 +247,19 @@
               "target": "Package",
               "version": "[6.0.3, )"
             },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.3, )"
+            },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
               "version": "[6.0.3, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[6.0.2, )"
             }
           },
           "imports": [

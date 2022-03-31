@@ -694,6 +694,19 @@
           }
         }
       },
+      "TechTree.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "TechTree.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/TechTree.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TechTree.Application.dll": {}
+        }
+      },
       "TechTree.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -2017,6 +2030,11 @@
         "version.txt"
       ]
     },
+    "TechTree.Application/1.0.0": {
+      "type": "project",
+      "path": "../TechTree.Application/TechTree.Application.csproj",
+      "msbuildProject": "../TechTree.Application/TechTree.Application.csproj"
+    },
     "TechTree.Domain/1.0.0": {
       "type": "project",
       "path": "../TechTree.Domain/TechTree.Domain.csproj",
@@ -2028,7 +2046,7 @@
       "Microsoft.EntityFrameworkCore.Design >= 6.0.3",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.3",
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.3",
-      "TechTree.Domain >= 1.0.0"
+      "TechTree.Application >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -2058,8 +2076,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\USER\\Desktop\\Kurslar\\Youtube\\TechTree\\TechTree\\TechTree.Domain\\TechTree.Domain.csproj": {
-              "projectPath": "C:\\Users\\USER\\Desktop\\Kurslar\\Youtube\\TechTree\\TechTree\\TechTree.Domain\\TechTree.Domain.csproj"
+            "C:\\Users\\USER\\Desktop\\Kurslar\\Youtube\\TechTree\\TechTree\\TechTree.Application\\TechTree.Application.csproj": {
+              "projectPath": "C:\\Users\\USER\\Desktop\\Kurslar\\Youtube\\TechTree\\TechTree\\TechTree.Application\\TechTree.Application.csproj"
             }
           }
         }

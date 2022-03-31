@@ -1,4 +1,4 @@
-using TechTree.Application.Extensions;
+using TechTree.Persistence.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -23,7 +23,15 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
+app.UseAuthentication();
 app.UseAuthorization();
+
+
+app.MapAreaControllerRoute(
+    name:"Admin",
+    areaName:"Admin",
+    pattern:"Admin/{controller=Admin}/{action=Login}/{id?}"
+    );
 
 app.MapControllerRoute(
     name: "default",

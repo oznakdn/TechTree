@@ -15,3 +15,5 @@ C:\Users\USER\Desktop\Kurslar\Youtube\TechTree\TechTree\TechTree.Persistence\obj
 C:\Users\USER\Desktop\Kurslar\Youtube\TechTree\TechTree\TechTree.Persistence\obj\Debug\net6.0\ref\TechTree.Persistence.dll
 C:\Users\USER\Desktop\Kurslar\Youtube\TechTree\TechTree\TechTree.Persistence\bin\Debug\net6.0\TechTree.Persistence.runtimeconfig.json
 C:\Users\USER\Desktop\Kurslar\Youtube\TechTree\TechTree\TechTree.Persistence\obj\Debug\net6.0\TechTree.Persistence.genruntimeconfig.cache
+C:\Users\USER\Desktop\Kurslar\Youtube\TechTree\TechTree\TechTree.Persistence\bin\Debug\net6.0\TechTree.Application.dll
+C:\Users\USER\Desktop\Kurslar\Youtube\TechTree\TechTree\TechTree.Persistence\bin\Debug\net6.0\TechTree.Application.pdb
