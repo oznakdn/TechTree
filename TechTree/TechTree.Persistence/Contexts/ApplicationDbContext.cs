@@ -10,5 +10,15 @@ namespace TechTree.Persistence.Contexts
         {
 
         }
+
+        public DbSet<Category> Categories { get; set; }
+        public DbSet<CategoryItem> CategoryItems { get; set; }
+        public DbSet<UserCategory> UserCategories { get; set; }
+        public DbSet<MediaType> MediaTypes { get; set; }
+        public DbSet<Content> Contents { get; set; }
+
+
+
+
     }
 }
