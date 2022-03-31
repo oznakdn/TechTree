@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "TechTree.Domain/1.0.0": {
+        "runtime": {
+          "TechTree.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "TechTree.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
