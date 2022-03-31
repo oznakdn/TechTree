@@ -1,12 +1,9 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using TechTree.Domain.Entities;
+using TechTree.Application.MappingProfiles;
 using TechTree.Persistence.Contexts;
+using TechTree.Persistence.Services;
+using TechTree.Persistence.UnitOfWorks;
 
 namespace TechTree.Persistence.Extensions
 {
@@ -17,6 +14,13 @@ namespace TechTree.Persistence.Extensions
             services.AddDbContext<ApplicationDbContext>(options=>options.UseSqlServer(connectionString));
 
             services.AddIdentityCore<ApplicationUser>(options => options.SignIn.RequireConfirmedAccount=false).AddEntityFrameworkStores<ApplicationDbContext>();
+
+            services.AddAutoMapper(typeof(CategoryProfile));
+
+            services.AddScoped<IUnitOfWork, UnitOfWork>();
+            services.AddScoped<ICategoryService, CategoryService>();
+
+
 
 
         }

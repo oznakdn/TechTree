@@ -1,0 +1,32 @@
+﻿@model TechTree.Application.Dtos.CategoryDtos.CategoriesDto
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Thumbnail</th>
+            <th></th>
+        </tr>
+
+    </thead>
+
+    <tbody>
+        @foreach (var item in Model.Categories)
+        {
+            <tr>
+                <td>@item.Id</td>
+                <td>@item.Title</td>
+                <td>@item.Description</td>
+                <td>@item.ThumbnailImagePath</td>
+                <td>
+                    <a class="btn btn-info" asp-action="Detail" asp-route-id="@item.Id">Detail</a>
+                    <a class="btn btn-warning" asp-action="Update" asp-route-id="@item.Id">Update</a>
+                    <a class="btn btn-danger" asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+
+</table>

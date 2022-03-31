@@ -1,7 +1,7 @@
 ﻿using TechTree.Persistence.Contexts;
 using TechTree.Persistence.Repositories;
 
-namespace TechTree.Persistence.UnitOfWork
+namespace TechTree.Persistence.UnitOfWorks
 {
     public class UnitOfWork : IUnitOfWork
     {
