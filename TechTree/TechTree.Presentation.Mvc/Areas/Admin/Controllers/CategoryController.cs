@@ -73,5 +73,17 @@ namespace TechTree.Presentation.Mvc.Areas.Admin.Controllers
             }
             return View(updateCategoryDto);
         }
+
+
+        public async Task<IActionResult>Delete(int id)
+        {
+            if(id==0)
+            {
+                return NotFound();
+            }
+
+            await _categoryService.Delete(id);
+            return RedirectToAction(nameof(Index));
+        }
     }
 }

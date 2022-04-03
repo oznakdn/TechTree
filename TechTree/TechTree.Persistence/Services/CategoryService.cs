@@ -25,6 +25,13 @@ namespace TechTree.Persistence.Services
             await _unitOfWork.SaveAsync();
         }
 
+        public async Task Delete(int id)
+        {
+            var category = await _unitOfWork.Category.GetAsync(x => x.Id ==id);
+            _unitOfWork.Category.Delete(category);
+            await _unitOfWork.SaveAsync();
+        }
+
         public async Task<CategoryDto> Get(int id)
         {
             var category = await _unitOfWork.Category.GetAsync(x => x.Id == id);
@@ -39,13 +46,17 @@ namespace TechTree.Persistence.Services
             var categoriesDto = new CategoriesDto();
             categoriesDto.Categories = categories.ToList();
             return categoriesDto;
-            
+
         }
 
         public async Task Update(UpdateCategoryDto updateCategoryDto)
         {
             var category = await _unitOfWork.Category.GetAsync(x => x.Id == updateCategoryDto.Id);
-            category = _mapper.Map<Category>(updateCategoryDto);
+            //category = _mapper.Map<Category>(updateCategoryDto);
+            category.Title = updateCategoryDto.Title;
+            category.Description = updateCategoryDto.Description;
+            category.ThumbnailImagePath = updateCategoryDto.ThumbnailImagePath;
+
             _unitOfWork.Category.Update(category);
             await _unitOfWork.SaveAsync();
         }

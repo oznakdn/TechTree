@@ -11,12 +11,24 @@ build_property.RootNamespace = TechTree.Presentation.Mvc
 build_property.ProjectDir = C:\Users\USER\Desktop\Kurslar\Youtube\TechTree\TechTree\TechTree.Presentation.Mvc\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
-build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = true
 build_property.MSBuildProjectDirectory = C:\Users\USER\Desktop\Kurslar\Youtube\TechTree\TechTree\TechTree.Presentation.Mvc
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/USER/Desktop/Kurslar/Youtube/TechTree/TechTree/TechTree.Presentation.Mvc/Areas/Admin/Views/Category/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2F0ZWdvcnlcQWRkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/USER/Desktop/Kurslar/Youtube/TechTree/TechTree/TechTree.Presentation.Mvc/Areas/Admin/Views/Category/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2F0ZWdvcnlcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/USER/Desktop/Kurslar/Youtube/TechTree/TechTree/TechTree.Presentation.Mvc/Areas/Admin/Views/Category/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2F0ZWdvcnlcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/USER/Desktop/Kurslar/Youtube/TechTree/TechTree/TechTree.Presentation.Mvc/Areas/Admin/Views/Category/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2F0ZWdvcnlcVXBkYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/USER/Desktop/Kurslar/Youtube/TechTree/TechTree/TechTree.Presentation.Mvc/Areas/Admin/Views/_ViewImports.cshtml]

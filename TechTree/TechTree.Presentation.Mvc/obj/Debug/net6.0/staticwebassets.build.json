@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "H0Qi1XLH8qZX/ktKpoZx0DDvXXxnQeIrRzbVqntNr34=",
+  "Hash": "GnV16qPmjIEDBKlzzEbQQYvGNuX0UtqfEp79gekjtuM=",
   "Source": "TechTree.Presentation.Mvc",
   "BasePath": "_content/TechTree.Presentation.Mvc",
   "Mode": "Default",
@@ -66,6 +66,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
+    },
+    {
+      "Identity": "C:\\Users\\USER\\Desktop\\Kurslar\\Youtube\\TechTree\\TechTree\\TechTree.Presentation.Mvc\\wwwroot\\css\\style.css",
+      "SourceId": "TechTree.Presentation.Mvc",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\Kurslar\\Youtube\\TechTree\\TechTree\\TechTree.Presentation.Mvc\\wwwroot\\",
+      "BasePath": "_content/TechTree.Presentation.Mvc",
+      "RelativePath": "css/style.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\style.css"
     },
     {
       "Identity": "C:\\Users\\USER\\Desktop\\Kurslar\\Youtube\\TechTree\\TechTree\\TechTree.Presentation.Mvc\\wwwroot\\favicon.ico",
