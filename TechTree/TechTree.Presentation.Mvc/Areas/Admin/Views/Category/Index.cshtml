@@ -1,4 +1,4 @@
-﻿@model TechTree.Application.Dtos.CategoryDtos.CategoriesDto
+﻿@model IEnumerable<TechTree.Application.Dtos.CategoryDtos.CategoriesDto>
 
 
     <div class="row mt-5">
@@ -18,7 +18,7 @@
                 </thead>
 
                 <tbody class="text-white text-center p-2">
-                    @foreach (var item in Model.Categories)
+                    @foreach (var item in Model)
                     {
                     <tr>
                         <td>@item.Id</td>
@@ -29,6 +29,7 @@
                             <a class="btn btn-info" asp-action="Details" asp-route-id="@item.Id">Detail</a>
                             <a class="btn btn-warning" asp-action="Update" asp-route-id="@item.Id">Update</a>
                             <a class="btn btn-danger" asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                            <a class="btn btn-secondary" asp-controller="CategoryItem" asp-action="Index" asp-route-id="@item.Id">Items</a>
                         </td>
                     </tr>
                     }

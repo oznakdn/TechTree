@@ -35,18 +35,23 @@ namespace TechTree.Persistence.Services
         public async Task<CategoryDto> Get(int id)
         {
             var category = await _unitOfWork.Category.GetAsync(x => x.Id == id);
-            var categoryDto = new CategoryDto();
-            categoryDto.Category = category;
-            return categoryDto;
+            return _mapper.Map<CategoryDto>(category);
         }
 
-        public async Task<CategoriesDto> GetAll()
+        public async Task<IEnumerable<CategoriesDto>> GetAll()
         {
             var categories = await _unitOfWork.Category.GetAllAsync();
-            var categoriesDto = new CategoriesDto();
-            categoriesDto.Categories = categories.ToList();
-            return categoriesDto;
+            return _mapper.Map<List<CategoriesDto>>(categories);
 
+        }
+
+        public async Task<CategorywithItemsDto> GetCategoryWithItems(int Id)
+        {
+            var categorywithItems = await _unitOfWork.Category.GetAllAsync(x => x.Id == Id, y => y.CategoryItems);
+            var categoryWithItemsDto = new CategorywithItemsDto();
+            categoryWithItemsDto.Categories = categorywithItems.ToList();
+            return categoryWithItemsDto;
+          
         }
 
         public async Task Update(UpdateCategoryDto updateCategoryDto)

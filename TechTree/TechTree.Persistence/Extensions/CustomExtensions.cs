@@ -19,6 +19,10 @@ namespace TechTree.Persistence.Extensions
 
             services.AddScoped<IUnitOfWork, UnitOfWork>();
             services.AddScoped<ICategoryService, CategoryService>();
+            services.AddScoped<ICategoryItemService, CategoryItemService>();
+            services.AddScoped<IMediaTypeService, MediaTypeService>();
+
+
 
 
 

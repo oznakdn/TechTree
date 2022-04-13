@@ -24,6 +24,7 @@
                 <button type="submit" class="btn btn-primary">Add</button>
                 <a asp-action="Index" asp-controller="Category" class="btn btn-warning">Back to List</a>
             </div>
+            @Html.AntiForgeryToken()
         </form>
     </div>
 </div>

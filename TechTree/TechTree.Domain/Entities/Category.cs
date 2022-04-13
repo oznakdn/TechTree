@@ -16,10 +16,10 @@ namespace TechTree.Domain.Entities
         public string ThumbnailImagePath { get; set; }
 
         [ForeignKey("CategoryId")]
-        public virtual ICollection<CategoryItem> CategoryItems { get; set; }
+        public virtual ICollection<CategoryItem> CategoryItems { get; set; } = new List<CategoryItem>();
 
         [ForeignKey("CategoryId")]
-        public virtual ICollection<UserCategory> UserCategories { get; set; }
+        public virtual ICollection<UserCategory> UserCategories { get; set; } = new List<UserCategory>();
 
     }
 }

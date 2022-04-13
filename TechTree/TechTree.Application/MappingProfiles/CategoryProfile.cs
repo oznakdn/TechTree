@@ -11,6 +11,8 @@ namespace TechTree.Application.MappingProfiles
     {
         public CategoryProfile()
         {
+            CreateMap<Category, CategoriesDto>();
+            CreateMap<Category, CategoryDto>();
             CreateMap<CreateCategoryDto, Category>();
             CreateMap<UpdateCategoryDto, Category>();
 

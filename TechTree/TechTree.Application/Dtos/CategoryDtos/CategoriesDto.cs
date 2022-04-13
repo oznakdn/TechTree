@@ -8,6 +8,9 @@ namespace TechTree.Application.Dtos.CategoryDtos
 {
     public class CategoriesDto
     {
-        public List<Category> Categories { get; set; } = new List<Category>();
+        public int Id { get; set; }
+        public string Title { get; set; }
+        public string Description { get; set; }
+        public string ThumbnailImagePath { get; set; }
     }
 }

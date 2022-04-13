@@ -567,3 +567,10 @@ C:\Users\USER\Desktop\Kurslar\Youtube\TechTree\TechTree\TechTree.Presentation.Mv
 C:\Users\USER\Desktop\Kurslar\Youtube\TechTree\TechTree\TechTree.Presentation.Mvc\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.dll
 C:\Users\USER\Desktop\Kurslar\Youtube\TechTree\TechTree\TechTree.Presentation.Mvc\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
 C:\Users\USER\Desktop\Kurslar\Youtube\TechTree\TechTree\TechTree.Presentation.Mvc\obj\Debug\net6.0\TechTree.Presentation.Mvc.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\USER\Desktop\Kurslar\Youtube\TechTree\TechTree\TechTree.Presentation.Mvc\bin\Debug\net6.0\System.Web.Mvc.dll
+C:\Users\USER\Desktop\Kurslar\Youtube\TechTree\TechTree\TechTree.Presentation.Mvc\bin\Debug\net6.0\System.Web.Razor.dll
+C:\Users\USER\Desktop\Kurslar\Youtube\TechTree\TechTree\TechTree.Presentation.Mvc\bin\Debug\net6.0\System.Web.Helpers.dll
+C:\Users\USER\Desktop\Kurslar\Youtube\TechTree\TechTree\TechTree.Presentation.Mvc\bin\Debug\net6.0\System.Web.WebPages.Deployment.dll
+C:\Users\USER\Desktop\Kurslar\Youtube\TechTree\TechTree\TechTree.Presentation.Mvc\bin\Debug\net6.0\System.Web.WebPages.Razor.dll
+C:\Users\USER\Desktop\Kurslar\Youtube\TechTree\TechTree\TechTree.Presentation.Mvc\bin\Debug\net6.0\System.Web.WebPages.dll
+C:\Users\USER\Desktop\Kurslar\Youtube\TechTree\TechTree\TechTree.Presentation.Mvc\bin\Debug\net6.0\Microsoft.Web.Infrastructure.dll

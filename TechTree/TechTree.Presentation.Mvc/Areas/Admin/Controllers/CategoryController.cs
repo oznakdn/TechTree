@@ -54,9 +54,9 @@ namespace TechTree.Presentation.Mvc.Areas.Admin.Controllers
             var category = await _categoryService.Get(id);
             var updateCategoryDto = new UpdateCategoryDto
             {
-                Title=category.Category.Title,
-                Description=category.Category.Description,
-                ThumbnailImagePath=category.Category.ThumbnailImagePath
+                Title=category.Title,
+                Description=category.Description,
+                ThumbnailImagePath=category.ThumbnailImagePath
             };
 
             return View(updateCategoryDto);
@@ -64,6 +64,7 @@ namespace TechTree.Presentation.Mvc.Areas.Admin.Controllers
         }
 
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public async Task<IActionResult>Update(UpdateCategoryDto updateCategoryDto)
         {
             if(ModelState.IsValid)
@@ -85,5 +86,12 @@ namespace TechTree.Presentation.Mvc.Areas.Admin.Controllers
             await _categoryService.Delete(id);
             return RedirectToAction(nameof(Index));
         }
+
+        public async Task<IActionResult> GetItems(int id)
+        {
+            var items = await _categoryService.GetCategoryWithItems(id);
+            return View(items);
+        }
+
     }
 }
