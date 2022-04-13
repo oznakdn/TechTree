@@ -14,23 +14,27 @@
                     <th>Id</th>
                     <th>Title</th>
                     <th>Item Released Date</th>
+                    <th>Description</th>
+
                     <th>Actions</th>
                 </tr>
             </thead>
             <tbody class="text-white text-center p-2">
                 @foreach (var item in Model)
                 {
-                    <tr>
-                        <td>@item.Id</td>
-                        <td>@item.Title</td>
-                        <td>@item.ItemReleasedDate</td>
-                        <td>
-                            <a class="btn btn-info btn-sm" asp-action="Details" asp-route-id="@item.Id">Detail</a>
-                            <a class="btn btn-warning btn-sm" asp-action="Update" asp-route-id="@item.Id">Update</a>
-                            <a class="btn btn-danger btn-sm" asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-                            <a class="btn btn-secondary btn-sm" asp-controller="Content" asp-action="Add" asp-route-id="@item.Id">Content</a>
-                        </td>
-                    </tr>
+                <tr>
+                    <td>@item.Id</td>
+                    <td>@item.Title</td>
+                    <td>@item.ItemReleasedDate</td>
+                    <td>@item.Description</td>
+
+                    <td>
+                        <a class="btn btn-info btn-sm" asp-action="Details" asp-route-id="@item.Id">Detail</a>
+                        <a class="btn btn-warning btn-sm" asp-action="Update" asp-route-id="@item.Id">Update</a>
+                        <a class="btn btn-danger btn-sm" asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                        <a class="btn btn-secondary btn-sm" asp-controller="Content" asp-action="Index" asp-route-id="@item.Id">Content</a>
+                    </td>
+                </tr>
                 }
             </tbody>
         </table>

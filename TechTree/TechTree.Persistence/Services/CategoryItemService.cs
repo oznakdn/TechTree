@@ -26,6 +26,18 @@ namespace TechTree.Persistence.Services
             await _unitOfWork.SaveAsync();
             
         }
+        public async Task Update(UpdateCategoryItemDto updateCategoryItemDto)
+        {
+            var categoryItem = await _unitOfWork.CategoryItem.GetAsync(x => x.Id == updateCategoryItemDto.Id);
+            categoryItem.Title = updateCategoryItemDto.Title;
+            categoryItem.ItemReleasedDate = updateCategoryItemDto.ItemReleasedDate;
+            categoryItem.MediaTypeId = updateCategoryItemDto.MediaTypeId;
+            categoryItem.CategoryId = updateCategoryItemDto.CategoryId;
+
+            _unitOfWork.CategoryItem.Update(categoryItem);
+            await _unitOfWork.SaveAsync();
+
+        }
 
         public async Task Delete(int Id)
         {
@@ -49,17 +61,12 @@ namespace TechTree.Persistence.Services
             
         }
 
-        public async Task Update(UpdateCategoryItemDto updateCategoryItemDto)
+        public async Task<IEnumerable<CategoryItemsDto>> GetAll()
         {
-            var categoryItem = await _unitOfWork.CategoryItem.GetAsync(x => x.Id == updateCategoryItemDto.Id);
-            categoryItem.Title = updateCategoryItemDto.Title;
-            categoryItem.ItemReleasedDate = updateCategoryItemDto.ItemReleasedDate;
-            categoryItem.MediaTypeId = updateCategoryItemDto.MediaTypeId;
-            categoryItem.CategoryId = updateCategoryItemDto.CategoryId;
-
-            _unitOfWork.CategoryItem.Update(categoryItem);
-            await _unitOfWork.SaveAsync();
-
+            var categoryItems = await _unitOfWork.CategoryItem.GetAllAsync();
+            return _mapper.Map<List<CategoryItemsDto>>(categoryItems);
         }
+
+    
     }
 }

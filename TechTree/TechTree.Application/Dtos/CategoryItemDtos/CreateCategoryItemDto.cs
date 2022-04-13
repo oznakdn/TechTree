@@ -10,6 +10,8 @@ namespace TechTree.Application.Dtos.CategoryItemDtos
     {
         public string Title { get; set; }
         public DateTime ItemReleasedDate { get; set; }
+        public string Description { get; set; }
+
 
         public int CategoryId { get; set; }
         public int MediaTypeId { get; set; }

@@ -7,6 +7,8 @@
                 <div class="card-body">
                     <h5 class="card-title text-danger">@Model.Title</h5>
                     <p class="card-text text-black">@Model.ItemReleasedDate</p>
+                    <p class="card-text text-black">@Model.Description</p>
+
                     <br />
                     <a asp-action="Index" asp-route-id="@Model.CategoryId" class="btn btn-warning">Back to List</a>
                 </div>

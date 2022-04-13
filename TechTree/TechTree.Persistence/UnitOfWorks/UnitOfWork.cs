@@ -25,12 +25,9 @@ namespace TechTree.Persistence.UnitOfWorks
 
 
         public ICategoryRepository Category => categoryRepository ?? new CategoryRepository(_context);
-
         public ICategoryItemRepository CategoryItem => categoryItemRepository ?? new CategoryItemRepository(_context);
-
         public IContentRepository Content => contentRepository ?? new ContentRepository(_context);
         public IMediaTypeRepository MediaType => mediaTypeRepository ?? new MediaTypeRepository(_context);
-
         public IUserCategoryRepository UserCategory => userCategoryRepository ?? new UserCategoryRepository(_context);
 
 

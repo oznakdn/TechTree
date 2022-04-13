@@ -53,7 +53,7 @@ namespace TechTree.Presentation.Mvc.Areas.Admin.Controllers
             {
 
                 await _categoryItemService.Add(createCategoryItemDto);
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction(nameof(Index), new {Id=createCategoryItemDto.CategoryId});
             }
 
             ViewBag.mediaTypes = await _mediaTypeService.GetAll();
@@ -68,6 +68,7 @@ namespace TechTree.Presentation.Mvc.Areas.Admin.Controllers
             {
                 Title = categoryItem.Title,
                 ItemReleasedDate = categoryItem.ItemReleasedDate,
+                Description=categoryItem.Description,
                 MediaTypeId = categoryItem.MediaTypeId,
                 CategoryId = categoryItem.CategoryId
             };
