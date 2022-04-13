@@ -276,6 +276,10 @@ namespace TechTree.Persistence.Migrations
                     b.Property<int>("CategoryId")
                         .HasColumnType("int");
 
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<DateTime>("ItemReleasedDate")
                         .HasColumnType("datetime2");
 
@@ -429,11 +433,13 @@ namespace TechTree.Persistence.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("TechTree.Domain.Entities.MediaType", null)
+                    b.HasOne("TechTree.Domain.Entities.MediaType", "MediaType")
                         .WithMany("CategoryItems")
                         .HasForeignKey("MediaTypeId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.Navigation("MediaType");
                 });
 
             modelBuilder.Entity("TechTree.Domain.Entities.Content", b =>

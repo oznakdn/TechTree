@@ -13,5 +13,6 @@ namespace TechTree.Application.Services
         Task<CategoryItemDto> Get(int Id);
         Task Add(CreateCategoryItemDto createCategoryItemDto);
         Task Update(UpdateCategoryItemDto updateCategoryItemDto);
+        Task Delete(int Id);
     }
 }

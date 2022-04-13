@@ -27,6 +27,13 @@ namespace TechTree.Persistence.Services
             
         }
 
+        public async Task Delete(int Id)
+        {
+            var categoryItem = await _unitOfWork.CategoryItem.GetAsync(x => x.Id == Id);
+            _unitOfWork.CategoryItem.Delete(categoryItem);
+            await _unitOfWork.SaveAsync();
+        }
+
         public async Task<CategoryItemDto> Get(int Id)
         {
             var categoryItem = await _unitOfWork.CategoryItem.GetAsync(x => x.Id == Id);

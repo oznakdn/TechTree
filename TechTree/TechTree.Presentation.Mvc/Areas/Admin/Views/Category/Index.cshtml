@@ -3,7 +3,9 @@
 
     <div class="row mt-5">
         <h4 class="text-center">Categories</h4>
-        <a asp-action="Add" asp-controller="Category" class="link-info">New</a>
+        <span>
+            <a asp-action="Add" asp-controller="Category" class="btn btn-primary btn-sm">New Category</a>
+        </span>
         <div class="col-md-12 mt-3 p-2">
             <table class="table table-bordered">
                 <thead class="text-danger text-center">
@@ -12,7 +14,7 @@
                         <th>Thumbnail</th>
                         <th>Title</th>
                         <th>Description</th>
-                        <th></th>
+                        <th>Actions</th>
                     </tr>
 
                 </thead>
@@ -22,14 +24,14 @@
                     {
                     <tr>
                         <td>@item.Id</td>
-                        <td><img src="@item.ThumbnailImagePath" class="img-fluid" style="max-height:50px; border-radius:30%" /></td>
+                        <td><img src="@item.ThumbnailImagePath" class="img-fluid" style="max-height:50px;" /></td>
                         <td>@item.Title</td>
                         <td>@item.Description</td>
                         <td>
-                            <a class="btn btn-info" asp-action="Details" asp-route-id="@item.Id">Detail</a>
-                            <a class="btn btn-warning" asp-action="Update" asp-route-id="@item.Id">Update</a>
-                            <a class="btn btn-danger" asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-                            <a class="btn btn-secondary" asp-controller="CategoryItem" asp-action="Index" asp-route-id="@item.Id">Items</a>
+                            <a class="btn btn-info btn-sm" asp-action="Details" asp-route-id="@item.Id">Detail</a>
+                            <a class="btn btn-warning btn-sm" asp-action="Update" asp-route-id="@item.Id">Update</a>
+                            <a class="btn btn-danger btn-sm" asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                            <a class="btn btn-secondary btn-sm" asp-controller="CategoryItem" asp-action="Index" asp-route-id="@item.Id">Items</a>
                         </td>
                     </tr>
                     }

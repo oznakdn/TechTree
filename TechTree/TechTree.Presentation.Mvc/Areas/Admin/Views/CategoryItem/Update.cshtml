@@ -38,6 +38,9 @@
             <button type="submit" class="btn btn-primary mt-4">Save</button>
         </div>
     </form>
+    <div class="form-group mt-3">
+        <a asp-action="Index" asp-controller="CategoryItem" asp-route-id="@Model.CategoryId" class="link-info text-warning">Back to List</a>
+    </div>
 </div>
 
 @section Scripts

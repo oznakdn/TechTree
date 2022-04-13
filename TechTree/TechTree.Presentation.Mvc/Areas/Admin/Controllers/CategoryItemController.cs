@@ -46,6 +46,7 @@ namespace TechTree.Presentation.Mvc.Areas.Admin.Controllers
 
 
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public async Task<IActionResult>Add(CreateCategoryItemDto createCategoryItemDto )
         {
             if (ModelState.IsValid)
@@ -76,19 +77,25 @@ namespace TechTree.Presentation.Mvc.Areas.Admin.Controllers
         }
 
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public async Task<IActionResult>Update(UpdateCategoryItemDto updateCategoryItemDto)
         {
-            ViewBag.categoryId = updateCategoryItemDto.CategoryId;
             if(ModelState.IsValid)
             {
                 ViewBag.mediaTypes = await _mediaTypeService.GetAll();
                 await _categoryItemService.Update(updateCategoryItemDto);
-                return RedirectToAction(nameof(Index),"CategoryItem",new { ViewBag.categoryId });
+                return RedirectToAction(nameof(Index),"CategoryItem",new { Id=updateCategoryItemDto.CategoryId});
             }
 
             ViewBag.categories = await _categoryService.GetAll();
             ViewBag.mediaTypes = await _mediaTypeService.GetAll();
             return View(updateCategoryItemDto);
+        }
+
+        public async Task<IActionResult>Delete(int Id)
+        {
+            await _categoryItemService.Delete(Id);
+            return RedirectToAction(nameof(Index),"Category", new { Id = ViewBag.categoryId });
         }
     }
 }
