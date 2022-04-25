@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using TechTree.Application.MappingProfiles;
 using TechTree.Persistence.Contexts;
@@ -13,7 +14,11 @@ namespace TechTree.Persistence.Extensions
         {
             services.AddDbContext<ApplicationDbContext>(options=>options.UseSqlServer(connectionString));
 
-            services.AddIdentityCore<ApplicationUser>(options => options.SignIn.RequireConfirmedAccount=false).AddEntityFrameworkStores<ApplicationDbContext>();
+            //services.AddIdentityCore<ApplicationUser>(options =>
+            //options.SignIn.RequireConfirmedAccount = false)
+            //    //.AddRoles<IdentityRole>()
+            //    .AddEntityFrameworkStores<ApplicationDbContext>();
+                
 
             services.AddAutoMapper(typeof(CategoryProfile));
 
@@ -22,6 +27,9 @@ namespace TechTree.Persistence.Extensions
             services.AddScoped<ICategoryItemService, CategoryItemService>();
             services.AddScoped<IMediaTypeService, MediaTypeService>();
             services.AddScoped<IContentService, ContentService>();
+
+
+
 
 
 

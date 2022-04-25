@@ -6,6 +6,7 @@ using TechTree.Application.Services;
 namespace TechTree.Presentation.Mvc.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize(Roles ="Admin")]
     public class CategoryController : Controller
     {
 

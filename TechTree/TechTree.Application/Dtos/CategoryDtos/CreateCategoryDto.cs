@@ -16,6 +16,7 @@ namespace TechTree.Application.Dtos.CategoryDtos
         public string Description { get; set; }
 
         [Required]
+        [Display(Name = "Thumbnail Image Path")]
         public string ThumbnailImagePath { get; set; }
     }
 }

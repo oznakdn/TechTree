@@ -1,10 +1,13 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using TechTree.Application.Dtos.ContentDtos;
 using TechTree.Application.Services;
 
 namespace TechTree.Presentation.Mvc.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize(Roles = "Admin")]
+
     public class ContentController : Controller
     {
         private readonly IContentService _service;

@@ -30,6 +30,7 @@ namespace TechTree.Persistence.Services
         {
             var categoryItem = await _unitOfWork.CategoryItem.GetAsync(x => x.Id == updateCategoryItemDto.Id);
             categoryItem.Title = updateCategoryItemDto.Title;
+            categoryItem.Description = updateCategoryItemDto.Description;
             categoryItem.ItemReleasedDate = updateCategoryItemDto.ItemReleasedDate;
             categoryItem.MediaTypeId = updateCategoryItemDto.MediaTypeId;
             categoryItem.CategoryId = updateCategoryItemDto.CategoryId;

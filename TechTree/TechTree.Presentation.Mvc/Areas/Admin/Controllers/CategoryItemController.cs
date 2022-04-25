@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using TechTree.Application.Dtos.CategoryItemDtos;
 using TechTree.Application.Services;
 
@@ -6,6 +7,8 @@ namespace TechTree.Presentation.Mvc.Areas.Admin.Controllers
 {
 
     [Area("Admin")]
+    [Authorize(Roles = "Admin")]
+
     public class CategoryItemController : Controller
     {
         private readonly ICategoryItemService _categoryItemService;
@@ -57,7 +60,7 @@ namespace TechTree.Presentation.Mvc.Areas.Admin.Controllers
             }
 
             ViewBag.mediaTypes = await _mediaTypeService.GetAll();
-            return View(createCategoryItemDto.CategoryId = ViewBag.categoryId);
+            return View(createCategoryItemDto);
         }
 
         [HttpGet]

@@ -13,6 +13,10 @@ namespace TechTree.Application.MappingProfiles
         public MediaTypeProfile()
         {
             CreateMap<MediaType, MediaTypesDto>();
+            CreateMap<MediaType, MediaTypeDto>();
+            CreateMap<CreateMediaTypeDto, MediaType>();
+
+
         }
     }
 }

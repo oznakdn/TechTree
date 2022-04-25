@@ -11,6 +11,11 @@ namespace TechTree.Persistence.Contexts
 
         }
 
+        protected override void OnModelCreating(ModelBuilder builder)
+        {
+            base.OnModelCreating(builder);
+           
+        }
         public DbSet<Category> Categories { get; set; }
         public DbSet<CategoryItem> CategoryItems { get; set; }
         public DbSet<UserCategory> UserCategories { get; set; }

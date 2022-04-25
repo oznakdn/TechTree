@@ -10,5 +10,10 @@ namespace TechTree.Application.Services
     public interface IMediaTypeService
     {
         Task<List<MediaTypesDto>> GetAll();
+        Task<MediaType> GetById(int Id);
+        Task<MediaTypeDto> Get(int Id);
+        Task Add(CreateMediaTypeDto createMediaTypeDto);
+        Task Update(UpdateMediaTypeDto updateMediaTypeDto);
+        Task Delete(int Id);
     }
 }
